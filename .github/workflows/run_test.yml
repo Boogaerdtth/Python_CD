@@ -23,6 +23,7 @@ jobs:
  #       host: ${{ secrets.HOST }}
         username: ${{ secrets.ROOT_ADRESS }}
         password: ${{ secrets.ROOT_PASSWORD }}
+        port: ${{ secrets.PORT }}
         source: "."
         target: "/var/www/foo"
     - if: ${{ success() }}
@@ -32,9 +33,8 @@ jobs:
 #        host: ${{ secrets.HOST }}
         root_adress: ${{ secrets.ROOT_ADRESS }}
         password: ${{ secrets.ROOT_PASSWORD }}
-#        port: ${{ secrets.PORT }}
-#        script: | 
-#          cd /var/www/foo/
- #username: ${{ secrets.USERNAME }}
-#         ls -l  
+        port: ${{ secrets.PORT }}
+        script: | 
+        whoami
+        ls -l  
 
