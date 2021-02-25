@@ -21,11 +21,11 @@ jobs:
       uses: appleboy/scp-action@master
       with:
         host: ${{ secrets.HOST }}
-        username: ${{ secrets.ROOT_ADRESS }}
-        password: ${{ secrets.ROOT_PASSWORD }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-#        source: "."
-#        target: "/var/www/foo"
+        source: "."
+        target: "/var/www/foo"
     - if: ${{ success() }}
       name: executing a remote command
       uses: appleboy/ssh-action@master
