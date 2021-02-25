@@ -20,6 +20,7 @@ jobs:
       env:
         host: ${{ secrets.ROOT_ADRESS }}
         username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.ROOT_PASSWORD }}
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.PORT }}
       with:  
@@ -31,6 +32,7 @@ jobs:
       with:
         host: ${{ secrets.ROOT_ADRESS }}
         username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.ROOT_PASSWORD }}
         key: ${{ secrets.SSH_KEY}}
         port: ${{ secrets.PORT }}
         script: | 
