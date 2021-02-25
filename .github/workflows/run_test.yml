@@ -35,5 +35,5 @@ jobs:
         password: ${{ secrets.ROOT_PASSWORD }}
         port: ${{ secrets.PORT }}
         script: | 
-        whoami
-        ls -l
+          whoami
+          ls -l
