@@ -20,17 +20,17 @@ jobs:
       name: copy file via ssh password
       uses: appleboy/scp-action@master
       with:
- #       host: ${{ secrets.HOST }}
+        host: ${{ secrets.HOST }}
         username: ${{ secrets.ROOT_ADRESS }}
         password: ${{ secrets.ROOT_PASSWORD }}
         port: ${{ secrets.PORT }}
-        source: "."
-        target: "/var/www/foo"
+#        source: "."
+#        target: "/var/www/foo"
     - if: ${{ success() }}
       name: executing a remote command
       uses: appleboy/ssh-action@master
       with:
-#        host: ${{ secrets.HOST }}
+        host: ${{ secrets.HOST }}
         root_adress: ${{ secrets.ROOT_ADRESS }}
         password: ${{ secrets.ROOT_PASSWORD }}
         port: ${{ secrets.PORT }}
