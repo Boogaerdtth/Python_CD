@@ -1,6 +1,7 @@
 name: scp files
 on: [push]
 jobs:
+
   build:
     name: Build
     runs-on: ubuntu-18.04
