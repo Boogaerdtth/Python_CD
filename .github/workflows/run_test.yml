@@ -20,15 +20,15 @@ jobs:
     #- if: ${{ success() }}
     - name: copy file via ssh password
       uses: appleboy/scp-action@master
-      env:
+      with:
         host: ${{ secrets.ROOT_ADRESS }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.PORT }}
-      with:  
+  
         source: "."
-#        target: "/var/www/foo"
+        target: "/var/www/foo"
         target: "~" 
    #- if: ${{ success() }}
 
