@@ -21,7 +21,7 @@ jobs:
     - name: copy file via ssh password
       uses: appleboy/scp-action@master
       with:
-        host: ${{ secrets.ROOT_ADRESS }}
+        host: ${{ secrets.SSH_ROOT_IP }}
         username: ${{ secrets.USERNAME }}
 #        password: ${{ secrets.PASSWORD }}
         key: ${{ secrets.SSH_KEY_SHORT }}
@@ -34,7 +34,7 @@ jobs:
     - name: executing a remote command
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.ROOT_ADRESS }}
+        host: ${{ secrets.SSH_ROOT_IP }}
         username: ${{ secrets.USERNAME }}
  #       password: ${{ secrets.PASSWORD }}
         key: ${{ secrets.SSH_KEY_SHORT}}
