@@ -28,8 +28,9 @@ jobs:
         port: ${{ secrets.PORT }}
       with:  
         source: "."
-        target: "/var/www/foo"
-    #- if: ${{ success() }}
+#        target: "/var/www/foo"
+        target: "~" 
+   #- if: ${{ success() }}
 
     - name: executing a remote command
       uses: appleboy/ssh-action@master

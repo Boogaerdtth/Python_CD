@@ -18,3 +18,7 @@ Ik weet nog steeds niet waar daar fout gaat.
 
 Ik heb 2 deply keys toegevoegd, eentje voor m'n lokale computer 
 en 1 voor op de server.
+
+Bij het testen gaat de test stuk bij het toepassen van de secrets. 
+Ik voeg de secrets toe en verwerk ze in mijn .yml file. Ik snap niet waar het misgaat.
+En hulp krijg ik ook niet echt
