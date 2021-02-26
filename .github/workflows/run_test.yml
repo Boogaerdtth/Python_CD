@@ -29,7 +29,6 @@ jobs:
   
         source: "."
         target: "/var/www/foo"
-        target: "~" 
    #- if: ${{ success() }}
 
     - name: executing a remote command
