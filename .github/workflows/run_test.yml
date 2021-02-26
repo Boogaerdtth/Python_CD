@@ -30,7 +30,7 @@ jobs:
         source: "."
         target: "/var/www/foo"
     #- if: ${{ success() }}
-"""
+
     - name: executing a remote command
       uses: appleboy/ssh-action@master
       with:
@@ -42,4 +42,3 @@ jobs:
         script: | 
           whoami
           ls -l
-"""
