@@ -24,7 +24,7 @@ jobs:
         host: ${{ secrets.ROOT_ADRESS }}
         username: ${{ secrets.NAME_UBUNTU }}
 #        password: ${{ secrets.PASSWORD }}
-        key: ${{ secrets.SSH_KEY }}
+        key: ${{ secrets.SSH_KEY_SHORT }}
         port: ${{ secrets.PORT }}
   
         source: "."
@@ -37,7 +37,7 @@ jobs:
         host: ${{ secrets.ROOT_ADRESS }}
         username: ${{ secrets.NAME_UBUNTU }}
  #       password: ${{ secrets.PASSWORD }}
-        key: ${{ secrets.SSH_KEY}}
+        key: ${{ secrets.SSH_KEY_SHORT}}
         port: ${{ secrets.PORT }}
         script: | 
           whoami
